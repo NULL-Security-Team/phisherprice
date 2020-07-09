@@ -27,9 +27,8 @@ sudo rm -r /usr/bin/sshscan.py;
 git clone https://github.com/NULL-Security-Team/phisherprice /usr/share/doc/phisherprice;
 echo "#!/bin/bash 
 bash /usr/share/doc/phisherprice/phisherprice.sh" '${1+"$@"}' > phisherprice;
-rm phisherprice;
 sudo cp phisherprice.sh /usr/bin/;
-chmod +x /usr/bin/phisherprice.sh;
+chmod +x phisherprice;
 rm phisherprice;
 if [ -d "/usr/share/doc/phisherprice" ] ;
 then
