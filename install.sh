@@ -25,9 +25,9 @@ echo "[✔] Installing ...";
 echo "";
 git clone https://github.com/NULL-Security-Team/phisherprice;
 echo "#!/bin/bash 
-bash /usr/local/bin/phisherprice/phisherprice.sh" '${1+"$@"}' > phisherprice;
+bash /usr/share/doc/phisherprice/phisherprice.sh" '${1+"$@"}' > phisherprice;
 echo "#!/bin/bash 
-python /usr/local/bin/phisherprice/sshscan.py" '${1+"$@"}' > sshscan;
+python /usr/share/doc/phisherprice/sshscan.py" '${1+"$@"}' > sshscan;
 chmod +x phisherprice;
 chmod +x sshscan;
 sudo cp phisherprice.sh /usr/bin/;
