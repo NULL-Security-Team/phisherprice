@@ -29,8 +29,7 @@ echo "#!/bin/bash
 bash /usr/share/doc/phisherprice/phisherprice.sh" '${1+"$@"}' > phisherprice;
 chmod +x phisherprice.sh;
 sudo cp phisherprice.sh /usr/bin/;
-sudo cp sshscan.py /usr/bin/;
-chmod +x /usr/bin/sshscan.py;
+sudo rm -r /usr/bin/sshscan.py;
 rm phisherprice;
 if [ -d "/usr/share/doc/phisherprice" ] ;
 then
