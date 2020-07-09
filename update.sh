@@ -22,7 +22,7 @@ sudo chmod +x /usr/share/doc/
 
 clear
 
-sudo rm -rf /usr/share/doc/phisherprice/
+sudo rm -r /usr/share/doc/phisherprice/
 
 clear
 
@@ -30,7 +30,7 @@ cd /etc/
 
 clear
 
-sudo rm -rf /etc/SirCryptic
+sudo rm -r /etc/SirCryptic
 
 clear
 
