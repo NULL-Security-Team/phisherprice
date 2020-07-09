@@ -54,6 +54,6 @@ sudo chmod +x install.sh
 
 clear
 
-./install.sh
+sudo ./install.sh
 
 clear
