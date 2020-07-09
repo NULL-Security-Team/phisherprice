@@ -30,6 +30,7 @@ bash /usr/share/doc/phisherprice/phisherprice.sh" '${1+"$@"}' > phisherprice;
 rm phisherprice;
 sudo cp phisherprice.sh /usr/bin/;
 chmod +x /usr/bin/phisherprice.sh;
+rm phisherprice;
 if [ -d "/usr/share/doc/phisherprice" ] ;
 then
 echo -e '\e[1;33m
