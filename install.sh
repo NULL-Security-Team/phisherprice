@@ -15,7 +15,7 @@ echo "[◉] A directory phisherprice was found! Do you want to replace it? [Y/n]
 read selection
 if [ $selection == "y" ] ; 
 then
-sudo rm -r "/usr/share/doc/phisherprice"
+ rm -r "/usr/share/doc/phisherprice"
 else
  exit
 fi
@@ -23,12 +23,15 @@ fi
 
 echo "[✔] Installing ...";
 echo "";
-sudo rm -r /usr/bin/sshscan.py;
 git clone https://github.com/NULL-Security-Team/phisherprice /usr/share/doc/phisherprice;
 echo "#!/bin/bash 
 bash /usr/share/doc/phisherprice/phisherprice.sh" '${1+"$@"}' > phisherprice;
+echo "#!/bin/bash 
+python /usr/share/doc/phisherprice/sshscan.py" '${1+"$@"}' > sshscan;
 chmod +x phisherprice;
+chmod +x sshscan;
 sudo cp phisherprice.sh /usr/bin/;
+sudo cp sshscan.py /usr/bin/;
 rm phisherprice;
 if [ -d "/usr/share/doc/phisherprice" ] ;
 then
