@@ -23,7 +23,7 @@ fi
 
 echo "[✔] Installing ...";
 echo "";
-git clone https://github.com/NULL-Security-Team/phisherprice /usr/local/bin/phisherprice;
+git clone https://github.com/NULL-Security-Team/phisherprice;
 echo "#!/bin/bash 
 bash /usr/local/bin/phisherprice/phisherprice.sh" '${1+"$@"}' > phisherprice;
 echo "#!/bin/bash 
